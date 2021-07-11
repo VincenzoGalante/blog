@@ -26,6 +26,9 @@ gem 'turbolinks', '~> 5'
 # gem for API key storing
 gem 'dotenv-rails', groups: [:development, :test]
 
+#P gem for photo upload by user
+gem 'cloudinary', '~> 1.16.0'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
