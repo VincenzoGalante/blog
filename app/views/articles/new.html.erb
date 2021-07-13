@@ -1,5 +1,8 @@
 <h1>New Article</h1>
 
-<%= render 'form', article: @article %>
-
-<%= link_to 'Back', root_path %>
+<%= simple_form_for(@article) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :body %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+  <%= f.button :submit %>
+<% end %>
